@@ -1,10 +1,26 @@
 
-password = 'horse'
 
 
 
-def login(password):
+def login():
     i = 0
+    username = ' '
+    password = ' '
+    x = 0
+
+    if password.isspace() == True and username.isspace() == True:
+      while x < 1:
+        print('no account detected create new one')
+        print('username')
+        username = input('>')
+        print('password')
+        password = input('>')
+        x += 10
+
+        if len(password) <= 4:
+            print('too short')
+            x -= 10
+
     while i <= 2:
       password_inp = input('> Enter password or type "reset" to change password: ')
       if password_inp == password:
@@ -22,4 +38,17 @@ def login(password):
         elif i < 3:
             print('Wrong password')
 
-login(password)
+
+login()
+
+
+
+
+
+
+
+
+
+
+
+
