@@ -6,3 +6,5 @@ includes a basic login program and a first iteration of tic tac toe that steals 
 requires algorithm that allows comp to plan moves
 requires a 'you win!' screen
 
+includes simple Tkinter Gui for rock, paper, scissors GUI
+
