@@ -134,7 +134,7 @@ scissors = Button(root, text = 'Scissors', command = lambda: game('scissors'))
 counter_label = Label(root, text = 'go number: ' + str(0))
 
 
-Intro_label.grid(row = 0, column = 1)
+Intro_label.grid(row = 0, column = 1, padx = 10, pady = 10, columnspan = 1)
 counter_label.grid(row = 2, column = 1, pady = 10)
 winner_label.grid(row = 3, column = 1)
 
